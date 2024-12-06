@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightpink;
+    /* background-image: url("../../images/photo-1655998233171-ee5b130acba5.jpg"); */
+}
+.todo-container{
+    background-color: #fff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
+}
+.todo-title{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.input-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+.input-text{
+    flex: 1;
+    padding: 10px;
+    background-color: lightblue;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-btn{
+    padding: 10px 20px;
+    background-color: lightgrey;
+    color: black;
+}
+.add-btn:hover{
+    background-color: #45a049;
+}
+.task-list ul {
+    list-style: none;
+
+}
+.task-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 3px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 2px;
+
+}
+button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* index2 */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightblue;
+    border: 2px solid #ddd;
+    padding: 80px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 50px;
+    color: #333;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+.text{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid#ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: lightslategray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
