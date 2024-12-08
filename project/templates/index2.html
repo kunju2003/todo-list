@@ -9,12 +9,12 @@
 </head>
 <body >
     <div class="container">
-        <h1 class="title">Editing page</h1>
-        <div class="input">
-            <textarea name="" id="" class="text"></textarea>
-            <button class="btn">update </button>
+        <form action="todo_update" method="POST">
+            {% csrf_token %}
+            <div class="textarea-container">
+            <textarea name="todoarea" id="" placeholder="enter task">{{data.sub}}</textarea></div>
+            <div class="button-container"><button type="submit">Add</button></div>
+        </form>
         </div>
-    </div>
-    
 </body>
 </html>

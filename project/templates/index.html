@@ -8,32 +8,27 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <div class="todo-container">
-        <h1 class="todo-title">To-Do List</h1>
-        <div class="input-section" >
-            <textarea name="" id="" class="input-text" placeholder="enter task"></textarea>
-            <button class="add-btn">Add</button>
-        </div>
-        <div class="task-list">
-            <form action="../"></form>
+    <div class="container">
+        <form action="../" method="POST">
             {% csrf_token %}
-            <ul>
-                <li><input type="text" name="" id=""><button >update</button></li>
-                <li><input type="text" name="" id=""><button>update</button></li>
-                <li><input type="text" name="" id=""><button>update</button></li>
-                <li><input type="text" name="" id=""><button>update</button></li>
-                <li><input type="text" name="" id=""><button>update</button></li>
-                <li><input type="text" name="" id=""><button>update</button></li>
-                <li><input type="text" name="" id=""><button>update</button></li>
-                <li><input type="text" name="" id=""><button>update</button></li>
-                <li><input type="text" name="" id=""><button>update</button></li>
-                <li><input type="text" name="" id=""><button>update</button></li>
-                <li><input type="text" name="" id=""><button>update</button></li>
-                <li><input type="text" name="" id=""><button>update</button></li>
-                
-            </ul>
-        </div>
+            <div class="textarea-container">
+            <textarea name="todoarea" id="" placeholder="enter task"></textarea></div>
+            <div class="button-container"><button type="submit">Add</button></div>
+        </form>
+        <div class="table-container">
+        <table border="1">
+            
+            {% for i in todos %}
+            <tr>
+                <td>{{i.date}}</td>
+                <td>{{i.sub}}</td>
+                <td><a href="">Update</a></td>
+            </tr>
+            {% endfor %}
+            
+        </table>
     </div>
+</div>
     
 </body>
 </html>
